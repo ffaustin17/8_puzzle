@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "java_practice_01_3fc80f43",
+            "console":"externalTerminal"
+        }
+    ]
+}

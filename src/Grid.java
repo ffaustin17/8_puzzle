@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.util.*;
+import java.awt.*;
 
 
 public class Grid extends JPanel{
@@ -14,7 +15,7 @@ public class Grid extends JPanel{
     private final int x_pos;
     private final int y_pos;
 
-    private ArrayList<Integer> possible_tile_vals = new ArrayList<Integer>(Arrays.asList(0,1,2,3,4,5,6,7,8,9));
+    private ArrayList<Integer> possible_tile_vals = new ArrayList<Integer>(Arrays.asList(0,1,2,3,4,5,6,7,8));
 
 
     private void populateGrid(int grid_x_pos, int grid_y_pos, int tile_w, int tile_h, int num_rows, int num_cols){
@@ -58,6 +59,11 @@ public class Grid extends JPanel{
         this.x_pos = grid_x_pos;
         this.y_pos = grid_y_pos;
 
+        
+        //we add the tiles to the grid
+        populateGrid(this.x_pos, this.y_pos, tile_width, tile_height, num_rows, num_cols);
+        this.setLayout(new GridLayout(num_rows, num_cols));
+        this.setSize(400,400);
 
     }
 

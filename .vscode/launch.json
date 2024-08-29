@@ -5,8 +5,15 @@
             "name": "App",
             "request": "launch",
             "mainClass": "App",
+            "projectName": "8_puzzle_41362f2f"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
             "projectName": "java_practice_01_3fc80f43",
-            "console":"externalTerminal"
+            "console": "externalTerminal"
         }
     ]
 }

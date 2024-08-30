@@ -1,17 +1,19 @@
+import java.awt.BorderLayout;
+
 import javax.swing.*;
 
 
-public class App {
+public class Driver {
     public static void main(String[] args) throws Exception {
         JFrame frame = new JFrame();
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        frame.setSize(600, 480);
+        frame.setSize(400, 280);
 
-        Grid grid = new Grid(3,3,50,50,100,200);
+        Grid grid = new Grid(3,3);
 
-        frame.add(grid);
+        frame.add(grid, BorderLayout.CENTER);
 
         frame.setVisible(true);
 

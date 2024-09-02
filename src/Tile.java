@@ -1,3 +1,6 @@
+import java.awt.Dimension;
+import java.awt.*;
+
 import javax.swing.*;
 
 public class Tile extends JButton{
@@ -46,7 +49,10 @@ public class Tile extends JButton{
         setValue(val);
         setStrRep(val);
 
-        //this.setSize(100,100);
+        this.setPreferredSize(new Dimension(100, 100));
+        this.setBorder(BorderFactory.createLineBorder(Color.black));
+        //this.setMinimumSize(new Dimension(50,50));
+        //this.setMaximumSize(new Dimension(150,150));
         //this.setLocation(x_pos, y_pos); // most likely will need to have the location be given to it as parameters.
         this.setText(str_rep);
     }

@@ -7,7 +7,7 @@ public class Grid extends JPanel{
     //grid matrix features
     //private final int num_rows;
     //private final int num_cols;
-    private ArrayList<Tile> grid_matrix;
+    //private ArrayList<Tile> grid_matrix;
     private int[] empty_tile_pos = new int[2];
 
     //Panel information
